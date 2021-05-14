@@ -298,11 +298,6 @@ footer p {
 
 /*--- || MEDIA QUERIES + RESPONSIVE STYLES || ---*/
 
-@media all and (min-width: 345px) {
-
-}
-
-/* start "desktop" here*/
 @media all and (min-width: 700px) {
     .nav-logo img {
         height: 60px;

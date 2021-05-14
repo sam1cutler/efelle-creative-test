@@ -1,15 +1,17 @@
 # efelle Code Test
 
 ## General Description
-Simple web page striving to reproduce the styles in a sample image:
+Simple web page striving to reproduce the styles in the following sample image:
 ![efelle-sample-image](./efelle_construction.png "efelle-sample-image")
+
+You can find the live, GitHub Pages-hosted page [here](https://sam1cutler.github.io/efelle-creative-test/).
 
 
 ## Technology used
 HTML and CSS.
 
 ## Contact Me
-You can find [my GitHub page here](https://github.com/sam1cutler).
+You can find [my GitHub page here](https://github.com/sam1cutler). 
 
 ## References provided by efelle:
 - Fonts
