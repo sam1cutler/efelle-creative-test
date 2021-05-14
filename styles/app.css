@@ -5,6 +5,7 @@
 body {
     font-size: 16pt;
     margin: 0px;
+    width: 100%;
 }
 
 #page {
@@ -53,7 +54,7 @@ header {
 }
 
 .nav-logo img {
-    height: 60px;
+    height: 30px;
     margin: 0;
     padding: 0;
 }
@@ -76,11 +77,12 @@ header {
 
 .efelle-menu {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 15px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .efelle-menu li {
@@ -110,7 +112,7 @@ header {
 .homepage-masthead {
     height: 100%;
     width: 100%;
-    padding: 0 100px;
+    padding: 0 20px;
 }
 
 .masthead-wrapper {
@@ -127,7 +129,7 @@ header {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     color:#FFFFFF;
     text-shadow: 0 0 10px black;
@@ -193,6 +195,7 @@ header {
 }
 
 .services-row {
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
@@ -200,22 +203,10 @@ header {
     padding: 20px 0;
 }
 
-.overlay {
-    background-color: rgb(41, 40, 40, 0.6);
-    height: 150px;
-    width: 150px;
-    border-radius: 75px;
+.services-intermediate-row {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: all 500ms ease-in-out;
-}
-
-.overlay hr {
-    width: 25px;
-    border: 1px solid #FFFFFF;
-    margin: 0;
 }
 
 .service-block-wrapper {
@@ -236,6 +227,24 @@ header {
     background-size: cover;
 }
 
+.overlay {
+    background-color: rgb(41, 40, 40, 0.6);
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in-out;
+}
+
+.overlay hr {
+    width: 25px;
+    border: 1px solid #FFFFFF;
+    margin: 0;
+}
+
 .service-block:hover {
     cursor: pointer;
 }
@@ -249,8 +258,8 @@ header {
 /*--- Footer ---*/
 footer {
     width: 100%;
-    padding: 30px 75px;
-    font-size: 1rem;
+    padding: 10px 25px;
+    font-size: .8rem;
     color: white;
     background-color: #222427;
 }
@@ -289,3 +298,45 @@ footer p {
 
 /*--- || MEDIA QUERIES + RESPONSIVE STYLES || ---*/
 
+@media all and (min-width: 345px) {
+
+}
+
+/* start "desktop" here*/
+@media all and (min-width: 700px) {
+    .nav-logo img {
+        height: 60px;
+        margin: 0;
+        padding: 0;
+    }
+
+   .homepage-masthead {
+       padding: 0 100px
+   }
+
+   .masthead-content {
+       align-items: flex-start;
+   }
+
+   .services-row {
+       flex-direction: row;
+       justify-content: center;
+   }
+
+   footer {
+        padding: 30px 75px;
+        font-size: 1rem;
+   }
+
+}
+
+@media all and (min-width: 1180px) {
+    .services-intermediate-row {
+        flex-direction: row;
+    }
+
+    .services-row {
+        align-items: center;
+        justify-content: center;
+    }
+}

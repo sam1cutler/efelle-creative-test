@@ -8,6 +8,9 @@ Simple web page striving to reproduce the styles in a sample image:
 ## Technology used
 HTML and CSS.
 
+## Contact Me
+You can find [my GitHub page here](https://github.com/sam1cutler).
+
 ## References provided by efelle:
 - Fonts
     - Architects Daughter (https://fonts.google.com/specimen/Architects+Daughter)
