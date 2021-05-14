@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16pt;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--- Header / Nav styles ---*/
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-image: url('../images/header-bg.jpeg');
+    padding: 5px 15px;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-wrapper {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.header-phone-number p {
+    font-size: .9rem;
+    margin: 0 20px 15px 0;
+    color: black;
+}
+
+.efelle-menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+}
+
+.efelle-menu li {
+    list-style-type: none;
+    font-size: .9rem;
+    margin: 0 .3rem;
+}
