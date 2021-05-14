@@ -71,7 +71,7 @@ header {
 }
 
 .header-phone-number p {
-    margin: 0 20px 15px 0;
+    margin: 0 10px 15px 0;
 }
 
 .efelle-menu {
@@ -81,7 +81,6 @@ header {
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
-
 }
 
 .efelle-menu li {
@@ -89,6 +88,14 @@ header {
     font-size: .6rem;
     text-transform: uppercase;
     margin: 0 .3rem;
+}
+
+.efelle-menu a {
+    transition: all 300ms ease-in-out;
+}
+
+.efelle-menu a:hover {
+    text-shadow: 0 0 6px grey;
 }
 
 /*--- Masthead ---*/
@@ -122,18 +129,36 @@ header {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color:#FFFFFF
+    color:#FFFFFF;
+    text-shadow: 0 0 10px black;
+}
+
+.masthead-content h5, h2 {
+    margin: 5px;
+}
+
+.masthead-content hr {
+    margin: 0 0 10px 0;
+    width: 65px;
+    border-top: 1px solid #FFFFFF;
 }
 
 .enquire-button {
     background-color: #446286;
+    margin: 30px 0;
     padding: 5px 50px;
+    transition: all 300ms ease-in-out;
+}
+
+.enquire-button:hover {
+    box-shadow: 0 0 8px black;
 }
 
 .enquire-button p {
     font-family: 'Roboto';
     text-transform: uppercase;
-    color:#FFFFFF
+    color:#FFFFFF;
+    transition: all 300ms ease-in-out;
 }
 
 /*--- Services ---*/
@@ -153,7 +178,18 @@ header {
     text-transform: uppercase;
     color: #FFFFFF;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+.cms-content p, h1 {
+    margin: 10px;
+}
+
+.cms-content hr {
+    /* margin: 0 0 10px 0; */
+    width: 30px;
+    border: 1px solid #333;
 }
 
 .services-row {
@@ -164,9 +200,27 @@ header {
     padding: 20px 0;
 }
 
+.overlay {
+    background-color: rgb(41, 40, 40, 0.6);
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 500ms ease-in-out;
+}
+
+.overlay hr {
+    width: 25px;
+    border: 1px solid #FFFFFF;
+    margin: 0;
+}
+
 .service-block-wrapper {
-    height: 200px;
-    width: 200px;
+    height: 270px;
+    width: 270px;
     margin: 10px;
     padding: 0;
 }
@@ -180,6 +234,16 @@ header {
     width: 100%;
     object-fit: contain;
     background-size: cover;
+}
+
+.service-block:hover {
+    cursor: pointer;
+}
+
+.service-block:hover .overlay {
+    height: 180px;
+    width: 180px;
+    border-radius: 90px;
 }
 
 /*--- Footer ---*/
@@ -212,6 +276,14 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.footer-social-icons a {
+    margin: 5px;
+}
+
+.footer-social-icons img {
+    height: 20px;
 }
 
 
